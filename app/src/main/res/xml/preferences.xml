@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.aveeopen.Common.ListPreferenceCompat
+        android:defaultValue="@string/pref_appTheme_default"
+        android:dialogTitle="@string/pref_appTheme"
+        android:entries="@array/pref_appTheme_entries"
+        android:entryValues="@array/pref_appTheme_values"
+        android:key="pref_appTheme"
+        android:summary="%s"
+        android:title="@string/pref_appTheme" />
+
+    <com.aveeopen.Common.ListPreferenceCompat
+        android:defaultValue="@string/pref_holdexit_default"
+        android:dialogTitle="@string/pref_hold_exit"
+        android:entries="@array/pref_hold_exit_entries"
+        android:entryValues="@array/pref_holdexit_values"
+        android:key="pref_holdexit"
+        android:summary="%s"
+        android:title="@string/pref_hold_exit" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_libUseSwipeBack"
+        android:summary="@string/pref_libswipeback2"
+        android:title="@string/pref_libswipeback" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_toolButtonsShowTexts"
+        android:summary="@string/pref_toolButtonsShowTexts2"
+        android:title="@string/pref_toolButtonsShowTexts" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_visControlsTimeout"
+        android:summary="@string/pref_visControlsTimeout2"
+        android:title="@string/pref_visControlsTimeout" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_fadePlayPause"
+        android:summary="@string/pref_fadePlayPause2"
+        android:title="@string/pref_fadePlayPause" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_resumePlayingAfterAudioFocusGained"
+        android:summary="@string/pref_resumePlayingAfterAudioFocusGained2"
+        android:title="@string/pref_resumePlayingAfterAudioFocusGained" />
+
+    <com.aveeopen.Common.ListPreferenceCompat
+        android:defaultValue="@string/pref_playbackEngine_default"
+        android:dialogTitle="@string/pref_playbackEngine"
+        android:entries="@array/pref_playbackEngine_entries"
+        android:entryValues="@array/pref_playbackEngine_values"
+        android:key="pref_playbackEngine"
+        android:summary="%s"
+        android:title="@string/pref_playbackEngine" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_visualizerGlobalSession"
+        android:summary="@string/pref_visualizerGlobalSession_txt2"
+        android:title="@string/pref_visualizerGlobalSession_txt1" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_highQualityBlur"
+        android:summary="@string/pref_highQualityBlur_txt2"
+        android:title="@string/pref_highQualityBlur_txt1" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_playlistDefaultPath_txt2"
+        android:key="pref_playlistDefaultPath"
+        android:summary="%s"
+        android:title="@string/pref_playlistDefaultPath_txt1" />
+
+    <Preference
+        android:key="pref_resetTips"
+        android:summary="@string/pref_resetTips_txt2"
+        android:title="@string/pref_resetTips_txt1" />
+
+    <Preference
+        android:key="pref_resetToDefault"
+        android:summary="@string/pref_reset_dialog_message"
+        android:title="Reset to default" />
+
+    <Preference
+        android:key="pref_openSourceLicenses"
+        android:title="@string/pref_openSourceLicenses" />
+
+    <!--<Preference-->
+        <!--android:key="pref_emailDeveloper"-->
+        <!--android:summary="@string/pref_emailDeveloper_txt2"-->
+        <!--android:title="@string/pref_emailDeveloper_txt1" />-->
+</PreferenceScreen>

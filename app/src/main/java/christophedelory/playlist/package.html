@@ -1,0 +1,75 @@
+<html>
+<body>
+The home of the playlist management API.
+You should begin here with {@link christophedelory.playlist.SpecificPlaylistFactory}.
+<br>
+
+You will find below the main steps in order to properly use the API for parsing an existing playlist (exception catching is not performed):
+<ul>
+<li>
+Let's begin with a file in your local file system.
+<pre>
+{@link java.io.File} file = new {@link java.io.File}("a_playlist_file");
+{@link christophedelory.playlist.SpecificPlaylist} specificPlaylist = SpecificPlaylistFactory.getInstance().{@link christophedelory.playlist.SpecificPlaylistFactory#readFrom(java.net.URL) readFrom}(file);
+</pre>
+</li>
+<li>
+If the method didn't throw an exception, the playlist format was recognized.
+And then, two cases: if the handle is null, the playlist is malformed:
+<pre>
+if (specificPlaylist == null)
+{
+    throw new Exception("Invalid playlist format");
+}
+</pre>
+</li>
+<li>
+Or you have now a valid specific playlist descriptor.
+You can work directly with it if you know its type (i.e. class).
+You can also switch to a "generic" playlist, which is the preferred way if you intend to be format-agnostic,
+or if you want to convert this "specific" playlist to another format.
+<pre>
+{@link christophedelory.playlist.Playlist} genericPlaylist = specificPlaylist.{@link christophedelory.playlist.SpecificPlaylist#toPlaylist() toPlaylist}();
+</pre>
+</li>
+<li>
+Now work with your "normalized" playlist.
+</li>
+</ul>
+
+The "generic" playlist hierarchy is the following:
+<p align="center"><img src="GenericPlaylist.png"></p>
+
+Now you want to save your playlist in a given format, let's say "ASX".
+First you have to retrieve the associated playlist provider.
+Two methods are available for that purpose:
+<ol>
+    <li>You know the "internal" identifier of this provider ("asx" in this case, see the diagram below): use the following code:
+    <pre>
+{@link christophedelory.playlist.SpecificPlaylistProvider} provider = SpecificPlaylistFactory.getInstance().{@link christophedelory.playlist.SpecificPlaylistFactory#findProviderById(String) findProviderById}("asx");
+    </pre>
+    </li>
+    <li>Or use the typical file name extension for this type of playlist:
+    <pre>
+{@link christophedelory.playlist.SpecificPlaylistProvider} provider = SpecificPlaylistFactory.getInstance().{@link christophedelory.playlist.SpecificPlaylistFactory#findProviderByExtension(String) findProviderByExtension}(".asx");
+    </pre>
+    </li>
+</ol>
+<u>Note</u>: if you prefer to keep the same format as for the source, simply use the input playlist's provider, like this:
+<pre>
+{@link christophedelory.playlist.SpecificPlaylistProvider} provider = specificPlaylist.{@link christophedelory.playlist.SpecificPlaylist#getProvider() getProvider}();
+</pre>
+The "specific" playlist providers hierarchy is the following:
+<p align="center"><img src="PlaylistProviders.png"></p>
+
+Now convert your generic playlist description to the chosen format:
+<pre>
+{@link christophedelory.playlist.SpecificPlaylist} newSpecificPlaylist = provider.{@link christophedelory.playlist.SpecificPlaylistProvider#toSpecificPlaylist(christophedelory.playlist.Playlist) toSpecificPlaylist}(genericPlaylist);
+</pre>
+If everything ran well, you can now flush the result to any output stream:
+<pre>
+newSpecificPlaylist.{@link christophedelory.playlist.SpecificPlaylist#writeTo(java.io.OutputStream,String) writeTo}(System.out, null);
+</pre>
+Enjoy!
+</body>
+</html>

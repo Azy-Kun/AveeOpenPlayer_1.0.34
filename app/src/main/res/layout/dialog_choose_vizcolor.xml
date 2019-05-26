@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black_alpha_3"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <it.moondroid.colormixer.HueSeekBar
+        android:id="@+id/hueBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <it.moondroid.colormixer.SaturationSeekBar
+        android:id="@+id/saturationBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <it.moondroid.colormixer.LightnessSeekBar
+        android:id="@+id/lightnessBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <it.moondroid.colormixer.MyOpacitySeekBar
+        android:id="@+id/opacityBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

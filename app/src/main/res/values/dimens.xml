@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="status_bar_height">1dp</dimen>
+
+    <dimen name="actionbar_height">56dp</dimen>
+    <dimen name="design_height_0">56dp</dimen>
+    <dimen name="design_height_minus_div">48dp</dimen>
+    <dimen name="design_height_divider">8dp</dimen>
+
+    <dimen name="player_controls_height">112dp</dimen>
+    <dimen name="player_controls_height_plus10">122dp</dimen>
+    <dimen name="player_controls_height_frag0">56dp</dimen>
+    <dimen name="player_controls_height_frag1">112dp</dimen>
+    <dimen name="player_controls_height_max">112dp</dimen>
+
+    <dimen name="player_controls_volume_popup_offset">16dp</dimen>
+    <dimen name="player_controls_volume_popup_offset_x">36dp</dimen>
+
+    <dimen name="path_button_max_width">160dp</dimen>
+    <dimen name="out_of_bound_swipe_dist">100dp</dimen>
+
+    <dimen name="textSizeM0">18sp</dimen>
+    <dimen name="textSizeM1">16sp</dimen>
+    <dimen name="textSizeM2">14sp</dimen>
+    <dimen name="textSizeM3">12sp</dimen>
+    <dimen name="textSizeM4">10sp</dimen>
+</resources>

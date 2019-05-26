@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:recyclerviewfastscroller="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/containerBackground"
+    tools:context="com.aveeopen.MainActivity">
+
+    <View
+        android:id="@+id/viewStatusBarBg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary" />
+
+    <View
+        android:id="@+id/viewActionBarBg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_below="@id/viewStatusBarBg"
+        android:background="?attr/colorPrimary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/viewActionBarBg"
+        android:layout_weight="1.0"
+        android:background="@color/transparent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/viewActionBarBg"
+        android:layout_marginLeft="-14dp"
+        android:paddingBottom="@dimen/player_controls_height_frag1"
+        recyclerviewfastscroller:rfs_barColor="#00000000"
+        recyclerviewfastscroller:rfs_handleBackground="@drawable/fastscroller_bar"
+        recyclerviewfastscroller:rfs_handleColor="@color/black_alpha_23" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/viewActionBarBg"
+        android:background="@drawable/actionbar_shadow_2x" />
+
+</RelativeLayout>

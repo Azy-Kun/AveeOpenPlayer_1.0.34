@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/mediaControlsPopupBackground"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPlaybackEngine0"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_music_sys_native" />
+
+        <ImageButton
+            android:id="@+id/btnPlaybackEngine1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_music_sys_exo" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/row1Gap"
+        android:layout_width="100dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/row1"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:background="@color/white_alpha_2">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1Gap"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnShuffle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_ctrl_shuffle" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/row2Gap"
+        android:layout_width="100dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/row2"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:background="@color/white_alpha_2">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2Gap"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnRepeatOnce"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_repeat_one" />
+
+        <ImageButton
+            android:id="@+id/btnRepeatAll"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_repeat_pl" />
+
+    </LinearLayout>
+</RelativeLayout>
+

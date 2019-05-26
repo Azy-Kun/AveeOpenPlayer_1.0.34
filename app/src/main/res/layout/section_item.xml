@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/design_height_0"
+    android:background="?attr/containerBackgroundDark"
+    android:padding="0dp">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_2" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/design_height_0"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_color_m1"
+        android:textSize="@dimen/textSizeM0"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btnCollapse"
+        android:layout_width="@dimen/design_height_0"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:color="@color/text_color_m2"
+        android:padding="0dp"
+        android:src="@drawable/ic_minus"
+        android:tint="@color/text_color_m2" />
+
+</RelativeLayout>

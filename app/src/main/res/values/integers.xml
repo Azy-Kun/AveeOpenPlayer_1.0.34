@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="service_idle_timeout">5000</integer>
+    <integer name="video_maximize_timeout">3000</integer>
+    <integer name="player_controls_height_in_items">2</integer>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+    </style>
+
+    <style name="SeekBarAppTheme" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:thumbOffset">18dp</item>
+    </style>
+
+</resources>

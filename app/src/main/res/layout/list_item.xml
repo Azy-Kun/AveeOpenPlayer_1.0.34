@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewItemBg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/design_height_0"
+    android:background="?attr/listItemBackground"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:id="@+id/artNumGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="0dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/txtNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="start"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_m1"
+            android:textSize="@dimen/textSizeM1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgArt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/text_color_m1"
+            android:tintMode="multiply" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnItemMore"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:color="@color/text_color_m2"
+        android:padding="0dp"
+        android:src="@drawable/ic_overflowv_2_s"
+        android:tint="?attr/listItemButtonColor" />
+
+    <TextView
+        android:id="@+id/txtItemDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnItemMore"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_color_m2"
+        android:textSize="@dimen/textSizeM2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/txtItemDuration"
+        android:layout_toRightOf="@id/artNumGroup"
+        android:paddingBottom="4dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/txtItemLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="9dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_m1"
+            android:textSize="@dimen/textSizeM1" />
+
+        <TextView
+            android:id="@+id/txtItemLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtItemLine1"
+            android:ellipsize="end"
+            android:paddingLeft="9dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_m2"
+            android:textSize="@dimen/textSizeM2"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

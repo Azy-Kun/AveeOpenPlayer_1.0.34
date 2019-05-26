@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/groupLeft"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_timer3_l"
+            android:tint="@color/text_color_m1" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnToggle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:text="@string/dialog_timer_off"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/groupLeft"
+        android:padding="0dp">
+
+        <NumberPicker
+            android:id="@+id/numberPickerH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <NumberPicker
+            android:id="@+id/numberPickerM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberPickerH" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

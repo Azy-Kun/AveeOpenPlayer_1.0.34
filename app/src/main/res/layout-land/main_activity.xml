@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aveeopen.CustomViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyActivity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/layoutMediaControlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_controls_height_plus10"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:longClickable="true">
+
+            <View
+                android:id="@+id/viewMediaControlsBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/player_controls_height"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/mediaControlsBackground" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_above="@id/viewMediaControlsBg"
+                android:background="@drawable/actionbar_shadow_2x_up" />
+        </RelativeLayout>
+
+        <include layout="@layout/media_controls" />
+
+    </RelativeLayout>
+</RelativeLayout>

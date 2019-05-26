@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="@dimen/textSizeM2"
+        android:padding="8dp"
+        android:textColor="@color/white_alpha_2"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/value"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/audio_virtualizer"-->
+        <!--android:textSize="@dimen/textSizeM3"-->
+        <!--android:padding="8dp"/>-->
+
+    <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title"
+        android:padding="10dp"
+        android:focusable="true"
+        android:clickable="true" />
+
+
+
+</RelativeLayout>

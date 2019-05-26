@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="black_alpha_0">#f2000000</color>
+    <color name="black_alpha_1">#de000000</color>
+    <color name="black_alpha_2">#8a000000</color>
+    <color name="black_alpha_23">#31000000</color>
+    <color name="black_alpha_25">#55000000</color>
+    <color name="black_alpha_3">#21000000</color>
+    <color name="black_alpha_4">#0d000000</color>
+
+    <color name="white_alpha_0">#f2ffffff</color>
+    <color name="white_alpha_1">#deffffff</color>
+    <color name="white_alpha_2">#8affffff</color>
+    <color name="white_alpha_3">#21ffffff</color>
+    <color name="white_alpha_4">#0dffffff</color>
+
+    <color name="gray_1">#ff212121</color>
+    <color name="gray_2">#ff757575</color>
+    <color name="gray_3">#ffdedede</color>
+    <color name="gray_4">#fff2f2f2</color>
+
+    <color name="settings_app_color">#ff555555</color>
+    <color name="settings_app_color_dark">#ff404040</color>
+
+    <color name="text_color_m1">#de000000</color>
+    <color name="text_color_m2">#8a000000</color>
+    <color name="text_color_m3">#21000000</color>
+    <color name="text_color_m4">#0d000000</color>
+
+    <!--Edit color themes, for greater control you should edit styles.xml ; APP RESKIN -->
+    <color name="theme1_app_color">#00acec</color>
+    <color name="theme1_app_color_dark">#0096cd</color>
+    <color name="theme1_highlight_color_1">#8aff0000</color>
+    <color name="theme1_highlight_color_2">#00acec</color>
+
+    <color name="theme2_app_color">#ec00ac</color>
+    <color name="theme2_app_color_dark">#cd0096</color>
+    <color name="theme2_highlight_color_1">#8a0000ff</color>
+    <color name="theme2_highlight_color_2">#ec00ac</color>
+    <color name="theme2_mediaControlsBackground">#de2f0022</color>
+    <color name="theme2_mediaControlsPopupBackground">#2f0022</color>
+    <color name="theme2_containerBgDark">#212f0022</color>
+
+    <color name="theme3_app_color">#acec00</color>
+    <color name="theme3_app_color_dark">#96cd00</color>
+    <color name="theme3_highlight_color_1">#de0096cd</color>
+    <color name="theme3_highlight_color_2">#de0096cd</color>
+    <color name="theme3_mediaControlsBackground">#cd0096</color>
+    <color name="theme3_mediaControlsPopupBackground">#cd0096</color>
+    <color name="theme3_item_bg_selected">#21cd0096</color>
+
+    <color name="theme4_app_color">#ecac00</color>
+    <color name="theme4_app_color_dark">#cd9600</color>
+    <color name="theme4_highlight_color_1">#8a00ff00</color>
+    <color name="theme4_highlight_color_2">#ffffffff</color>
+    <color name="theme4_containerBg">#c88800</color>
+    <color name="theme4_menuBg">#cd9600</color>
+    <color name="theme4_buttonLight">#de000000</color>
+    <color name="theme4_mediaControlsBackground">#deecac00</color>
+    <color name="theme4_mediaControlsPopupBackground">#ecac00</color>
+
+    <color name="theme5_app_color">#acacac</color>
+    <color name="theme5_app_color_dark">#969696</color>
+    <color name="theme5_highlight_color_1">#8aff0000</color>
+    <color name="theme5_highlight_color_2">#8aff0000</color>
+    <color name="theme5_containerBg">#ff757575</color>
+    <color name="theme5_menuBg">#ff757575</color>
+    <color name="theme5_buttonLight">#ffdedede</color>
+</resources>

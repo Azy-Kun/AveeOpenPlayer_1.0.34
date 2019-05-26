@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyTheme">
+        <attr format="reference" name="highlight_color_1"/>
+        <attr format="reference" name="highlight_color_2"/>
+        <attr format="reference" name="buttonColorLight"/>
+        <attr format="reference" name="buttonColorDark"/>
+        <attr format="reference" name="listItemButtonColor"/>
+        <attr format="reference" name="listItemBackground"/>
+        <attr format="reference" name="listItemBackgroundSelected"/>
+        <attr format="reference" name="songProgressBar"/>
+        <attr format="reference" name="containerBackground"/>
+        <attr format="reference" name="containerBackgroundDark"/>
+        <attr format="reference" name="mediaControlsBackground"/>
+        <attr format="reference" name="mediaControlsPopupBackground"/>
+    </declare-styleable>
+
+</resources>

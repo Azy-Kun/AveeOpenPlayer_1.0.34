@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMediaControlsNarrow"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/design_height_0"
+    android:layout_alignParentBottom="true"
+    android:background="#00000000"
+    android:clickable="true"
+    android:longClickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:visibility="invisible">
+
+    <ImageButton
+        android:id="@+id/btnVolume"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:tint="?attr/buttonColorLight"
+        android:src="@drawable/ic_speaker_s" />
+
+    <ImageButton
+        android:id="@+id/btnMediaControlsOverflow"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:tint="?attr/buttonColorLight"
+        android:src="@drawable/ic_overflowh_2_s" />
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnMediaControlsOverflow"
+        android:background="?android:attr/selectableItemBackground"
+        android:tint="?attr/buttonColorLight"
+        android:src="@drawable/ic_ctrl_play_s" />
+
+    <ImageView
+        android:id="@+id/viewOverlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPause"
+        android:layout_alignRight="@+id/btnPause"
+        android:layout_centerVertical="true"
+        android:tint="?attr/buttonColorLight"
+        android:src="@drawable/ic_ctrl_plring" />
+
+    <SeekBar
+        android:id="@+id/seekBarSongProgress"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/btnPause"
+        android:layout_toRightOf="@id/btnVolume"
+        android:max="1000"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:progressDrawable="?attr/songProgressBar"
+        android:thumb="@null" />
+
+    <TextView
+        android:id="@+id/txtSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@id/seekBarSongProgress"
+        android:layout_alignTop="@id/seekBarSongProgress"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnPause"
+        android:layout_toRightOf="@id/btnVolume"
+        android:ellipsize="marquee"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="0dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/white_alpha_1"
+        android:textSize="@dimen/textSizeM1" />
+
+</RelativeLayout>

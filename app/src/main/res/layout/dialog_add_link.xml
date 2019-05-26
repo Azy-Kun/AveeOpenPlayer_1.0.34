@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+<EditText
+    android:id="@+id/editTxtFolderName"
+    android:inputType="textUri"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:text=""
+    android:hint="" />
+    <TextView
+        android:id="@+id/txtUnder"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:text="@string/dialog_add_link_under_text"
+        />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_alpha_2"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:text="@string/dialog_add_link_under_text2"
+        />
+</LinearLayout>

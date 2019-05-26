@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_m2"
+        />
+
+    <Button android:id="@+id/btnChoose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/dialog_navigate_back"
+    />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+   <ListView android:id="@+id/list"
+   		android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/text_color_m1"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
+        android:text=""
+        android:textColor="@color/white_alpha_2"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSizeM0"
+    />
+
+</LinearLayout>

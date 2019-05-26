@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Avee Open Player</string> <!--Set your desired app name ; APP RESKIN -->
+
+    <string name="playback_service_notif_channel_name">com.aveeopen.ch0</string>
+
+    <!--development test ads-->
+    <!--<string name="ads_header_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="ads_footer_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--Be sure to use correct ad unit ids in PUBLISH VERSION-->
+
+    <!--Set your AdMob Ad unit Ids or comment out AdView controls in footer_item.xml and header_queue_item.xml to disable ads; APP RESKIN -->
+    <string name="ads_header_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> <!--Set your AdMob Ad unit Id ; APP RESKIN -->
+    <string name="ads_footer_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> <!--Set your AdMob Ad unit Id, you can use same as above; APP RESKIN -->
+
+    <string name="ellipsis_placeholder">…</string>
+
+</resources>

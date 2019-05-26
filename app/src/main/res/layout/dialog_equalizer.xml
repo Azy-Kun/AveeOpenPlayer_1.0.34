@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="false">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center_horizontal">
+
+        <Switch
+            android:id="@+id/switchEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <Spinner
+            android:id="@+id/spinnerPresets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/switchEnable"
+            android:textSize="@dimen/textSizeM0"
+            android:maxWidth="100dp"
+            />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="10dp"
+        android:background="@color/black_alpha_4"
+        >
+    <LinearLayout
+        android:id="@+id/linearLayoutBars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@null">
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="0dp">
+
+            <com.triggertrap.seekarc.SeekArc
+            android:id="@+id/seekArcBass"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+                android:padding="34dp"
+                seekarc:rotation="180"
+                seekarc:startAngle="30"
+                seekarc:sweepAngle="300"
+                seekarc:max="30"
+                seekarc:touchInside="true"/>
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/seekArcTreble"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="34dp"
+                android:layout_toRightOf="@+id/seekArcBass"
+                seekarc:rotation="180"
+                seekarc:startAngle="30"
+                seekarc:sweepAngle="300"
+                seekarc:max="30"
+                seekarc:touchInside="true"/>
+
+            <TextView
+                android:id="@+id/textBass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="@dimen/textSizeM1"
+                android:gravity="center"
+                android:layout_alignLeft="@id/seekArcBass"
+                android:layout_alignRight="@id/seekArcBass"
+                android:layout_alignTop="@id/seekArcBass"
+                android:layout_alignBottom="@id/seekArcBass"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/textTreble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="@dimen/textSizeM1"
+                android:gravity="center"
+                android:layout_alignLeft="@id/seekArcTreble"
+                android:layout_alignRight="@id/seekArcTreble"
+                android:layout_alignTop="@id/seekArcTreble"
+                android:layout_alignBottom="@id/seekArcTreble"
+                android:maxLines="2"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="0dp"
+        android:maxWidth="300dp">
+
+        <TextView
+            android:id="@+id/textVirtualizer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/audio_virtualizer"
+            android:textSize="@dimen/textSizeM3"
+            android:padding="8dp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/textVirtualizerValue"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="0"-->
+            <!--android:textSize="@dimen/textSizeM4"-->
+            <!--android:padding="8dp"/>-->
+
+        <SeekBar
+            android:id="@+id/seekBarVirtualizer"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/textVirtualizer"
+            android:max="100"
+            android:maxWidth="250dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/textReverb"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/audio_reverb"-->
+            <!--android:textSize="@dimen/textSizeM3" />-->
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spinnerReverb"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:layout_toRightOf="@id/textReverb"-->
+        <!--android:textSize="@dimen/textSizeM0"-->
+        <!--/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>

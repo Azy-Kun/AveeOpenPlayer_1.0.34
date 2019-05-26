@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="?attr/containerBackgroundDark">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <RelativeLayout
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="@string/libItemAction_playAll"
+                    android:textColor="@color/black_alpha_1"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/btn1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_above="@id/txt1"
+                    android:layout_centerHorizontal="true"
+                    android:color="@color/text_color_m1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_playlist4_play3"
+                    android:tint="@color/black_alpha_1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@id/group1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="@string/libItemAction_enqueueAll"
+                    android:textColor="@color/black_alpha_1"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/btn2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_above="@id/txt2"
+                    android:layout_centerHorizontal="true"
+                    android:color="@color/text_color_m1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_playlist4_plus3"
+                    android:tint="@color/black_alpha_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@id/group2"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="@string/toolbar_Sort"
+                    android:textColor="@color/black_alpha_1"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/btn5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_above="@id/txt5"
+                    android:layout_centerHorizontal="true"
+                    android:color="@color/text_color_m1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sort3"
+                    android:tint="@color/black_alpha_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@id/group5"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="@string/toolbar_showAlbumArtInstead"
+                    android:textColor="@color/black_alpha_1"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/btn6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_above="@id/txt6"
+                    android:layout_centerHorizontal="true"
+                    android:color="@color/text_color_m1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_visual3"
+                    android:tint="@color/black_alpha_1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <!--<com.google.android.gms.ads.AdView-->
+    <!--android:id="@+id/adView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:visibility="gone"-->
+    <!--ads:adSize="SMART_BANNER"-->
+    <!--ads:adUnitId="@string/ads_header_banner_ad_unit_id">-->
+    <!--</com.google.android.gms.ads.AdView>-->
+</LinearLayout>
+

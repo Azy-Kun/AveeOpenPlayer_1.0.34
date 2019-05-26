@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        //Be sure to use correct applicationId in PUBLISH VERSION
+        applicationId "com.aveeopen" //Set applicationId to your package name //APP RESKIN
+        minSdkVersion 16
+        targetSdkVersion 28
+        multiDexEnabled true
+
+        versionCode 34 //Set desired version (Optional) //APP RESKIN
+        versionName "1.0.34" //Set desired version (Optional) //APP RESKIN
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true //Set to true in PUBLISH VERSION
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    api group: 'com.google.guava', name: 'guava', version: '24.1-jre'
+
+    implementation project(':ColorMixer')
+    implementation(name:'ExoPlayer-library-release', ext:'aar')
+    implementation(name:'recyclerviewfastscroller-release', ext:'aar')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+    //implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+
+    implementation 'junit:junit:4.12'
+}

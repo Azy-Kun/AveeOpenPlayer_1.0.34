@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aveeopen.MainActivity">
+
+    <com.aveeopen.comp.LibraryQueueUI.MyView
+        android:id="@+id/surfaceViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="0dp"
+        android:background="#ff0a0a0a"
+        android:padding="0dp"
+        android:visibility="visible" />
+
+    <com.aveeopen.comp.Visualizer.VisualizerViewCore
+        android:id="@+id/surfaceViewVisualizer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.google.android.exoplayer.AspectRatioFrameLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <SurfaceView
+            android:id="@+id/surfaceViewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.google.android.exoplayer.text.SubtitleLayout
+            android:id="@+id/subtitles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.exoplayer.AspectRatioFrameLayout>
+
+    <View
+        android:id="@+id/viewStatusBarBg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" />
+
+    <View
+        android:id="@+id/viewActionBarBg"
+        android:layout_width="56dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/viewStatusBarBg"
+        android:background="#00000000" />
+
+    <ScrollView
+        android:id="@+id/layoutButtons"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/viewActionBarBg"
+        android:layout_marginBottom="@dimen/player_controls_height"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <ImageButton
+                android:id="@+id/btn0"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:color="@color/text_color_m1"
+                android:padding="4dp"
+                android:src="@drawable/ic_list4"
+                android:tint="#FFFFFFFF" />
+
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btn0"
+                android:background="?android:attr/selectableItemBackground"
+                android:color="@color/text_color_m1"
+                android:padding="4dp"
+                android:src="@drawable/ic_pencil"
+                android:tint="#FFFFFFFF" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btn1"
+                android:background="?android:attr/selectableItemBackground"
+                android:color="@color/text_color_m1"
+                android:padding="4dp"
+                android:src="@drawable/ic_vis_fit_crop3"
+                android:tint="#FFFFFFFF" />
+
+            <ImageButton
+                android:id="@+id/btn4"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btn3"
+                android:background="?android:attr/selectableItemBackground"
+                android:color="@color/text_color_m1"
+                android:padding="4dp"
+                android:src="@drawable/ic_switch_screen"
+                android:tint="#FFFFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

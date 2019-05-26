@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black_alpha_2"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <GridLayout
+        android:id="@+id/gridLayoutElements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3" />
+</ScrollView>
+
+

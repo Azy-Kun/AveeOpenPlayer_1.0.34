@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:background="?attr/mediaControlsPopupBackground"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/design_height_0"
+        android:layout_below="@+id/layoutExpandable"
+        android:background="@color/transparent"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/btnVolumeMute"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:tint="?attr/buttonColorLight"
+            android:src="@drawable/ic_mute_s" />
+
+        <ImageButton
+            android:id="@+id/btnExpand"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:tint="?attr/buttonColorLight"
+            android:src="@drawable/ic_expand2up"/>
+
+        <TextView
+            android:id="@+id/txtVolume"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnExpand"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="100%"
+            android:textColor="@color/white_alpha_1"
+            android:textSize="@dimen/textSizeM1" />
+
+        <SeekBar
+            android:id="@+id/seekBarVolume"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/txtVolume"
+            android:layout_toRightOf="@id/btnVolumeMute"
+            android:max="1000"
+            android:maxHeight="1000dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutExpandable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/design_height_0"
+            android:background="#00000000"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/txtCrossfadeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/dialog_crossfade"
+                android:textColor="@color/white_alpha_1"
+                android:textSize="@dimen/textSizeM2" />
+
+            <TextView
+                android:id="@+id/txtCrossfadeStatus"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0 sec"
+                android:textColor="@color/white_alpha_1"
+                android:textSize="@dimen/textSizeM1" />
+
+            <SeekBar
+                android:id="@+id/seekBarCrossfade"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/txtCrossfadeStatus"
+                android:layout_toRightOf="@id/txtCrossfadeLabel"
+                android:max="1000"
+                android:maxHeight="1000dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/design_height_0"
+            android:background="#00000000"
+            android:paddingBottom="0dp">
+
+            <ImageButton
+                android:id="@+id/btnEq"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:tint="?attr/buttonColorLight"
+                android:src="@drawable/ic_eq" />
+
+            <TextView
+                android:id="@+id/txtVolumeBalanceL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="L"
+                android:textColor="@color/white_alpha_1"
+                android:textSize="@dimen/textSizeM1" />
+
+            <TextView
+                android:id="@+id/txtVolumeBalanceStatus"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnEq"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0%"
+                android:textColor="@color/white_alpha_1"
+                android:textSize="@dimen/textSizeM1" />
+
+            <TextView
+                android:id="@+id/txtVolumeBalanceR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txtVolumeBalanceStatus"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="R"
+                android:textColor="@color/white_alpha_1"
+                android:textSize="@dimen/textSizeM1" />
+
+            <SeekBar
+                android:id="@+id/seekBarVolumeBalance"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txtVolumeBalanceR"
+                android:layout_toRightOf="@id/txtVolumeBalanceL"
+                android:max="1000"
+                android:maxHeight="1000dp"
+                android:progress="500" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

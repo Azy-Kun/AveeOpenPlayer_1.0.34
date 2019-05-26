@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="player_controls_height">56dp</dimen>
+    <dimen name="player_controls_height_plus10">66dp</dimen>
+    <dimen name="player_controls_height_frag0">56dp</dimen>
+    <dimen name="player_controls_height_frag1">56dp</dimen>
+</resources>

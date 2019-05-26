@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_settings_name">Settings</string>
+
+    <string translatable="false" name="musicSys_exo">ExoPlayer</string>
+    <string translatable="false" name="musicSys_native">Native MediaPlayer</string>
+
+    <string name="unknown_artist_name">Unknown artist</string>
+    <string name="unknown_album_name">Unknown album</string>
+    <string name="unnamed_title">Unnamed</string>
+
+    <string name="song_data_source">Source</string>
+    <string name="song_trackNum">Track #</string>
+    <string name="song_discNum">Disc #</string>
+    <string name="song_title">Title</string>
+    <string name="song_artist">Artist</string>
+    <string name="song_album">Album</string>
+    <string name="song_album_artist">Album Artist</string>
+    <string name="song_year">Year</string>
+    <string name="song_comment">Comment</string>
+    <string name="song_composer">Composer</string>
+    <string name="song_publisher">Publisher</string>
+    <string name="song_file_size">File Size</string>
+    <string name="song_bitRate">BitRate</string>
+    <string name="song_widthHeight">Width/Height</string>
+
+    <string name="hold_exit">Closing…</string>
+    <string name="hold_exit_canceled">Closing canceled!</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_overflowv">More options</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_close">Close</string>
+
+    <string name="playback_repeat_off">Repeat is off.</string>
+    <string name="playback_repeat_current">Repeating current song.</string>
+    <string name="playback_repeat_all">Repeat all songs.</string>
+    <string name="playback_shuffle_on">Shuffle is on.</string>
+    <string name="playback_shuffle_off">Shuffle is off.</string>
+    <string name="playback_shuffle">Shuffle</string>
+    <string name="playback_repeat">Repeat</string>
+    <string name="playback_crossfade_off">Off</string>
+    <string name="playback_gapless">Gapless</string>
+    <plurals name="playback_crossFade_x_sec">
+        <item quantity="other">%d sec</item>
+    </plurals>
+
+    <plurals name="audio_stereo_balance_x">
+        <item quantity="other">%d%%</item>
+    </plurals>
+    <plurals name="audio_volume_x">
+        <item quantity="other">%d%%</item>
+    </plurals>
+    <string name="audio_equalizer">Equalizer</string>
+    <string name="audio_eqcustom">Custom</string>
+    <string name="audio_virtualizer">Virtualizer</string>
+    <string name="audio_reverb">Reverb</string>
+    <plurals name="audio_bass_x">
+        <item quantity="other">Bass\n%d</item>
+    </plurals>
+    <plurals name="audio_treble_x">
+        <item quantity="other">Treble\n%d</item>
+    </plurals>
+
+    <plurals name="albums_count">
+        <item quantity="one">1 album</item>
+        <item quantity="other">%d albums</item>
+    </plurals>
+
+    <string name="nothing_to_show">Nothing to show</string>
+    <plurals name="showing_x_of_y_items3_item_count">
+        <item quantity="one">1 item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <string name="searching">Searching…</string>
+
+    <string name="toolbar_addPlaylist">Create playlist</string>
+    <string name="toolbar_scanPlaylistFiles">Scan playlist files</string>
+    <string name="toolbar_addFolder">Add folder</string>
+    <string name="toolbar_addLink">Add by URL</string>
+    <string name="toolbar_clearQueue">Clear queue</string>
+    <string name="toolbar_SaveAsPL">Save queue</string>
+    <string name="toolbar_Shuffle">Shuffle</string>
+    <string name="toolbar_FollowCurrent">Follow current</string>
+    <string name="toolbar_showAlbumArtInstead">Show Art</string>
+    <string name="toolbar_Sort">Sort</string>
+
+    <string name="libContainer_Library">Library</string>
+    <string name="libContainer_RecentlyAdded">Recently added</string>
+    <string name="libContainer_Albums">Albums</string>
+    <string name="libContainer_Artists">Artists</string>
+    <string name="libContainer_Genres">Genres</string>
+    <string name="libContainer_Playlists">Playlists</string>
+    <string name="libContainer_Folders">Folders</string>
+    <string name="libContainer_Queue_search">Search queue</string>
+    <string name="libContainer_Songs_search">Search songs</string>
+    <string name="libContainer_RecentlyAdded_search">Search recently</string>
+    <string name="libContainer_Albums_search">Search albums </string>
+    <string name="libContainer_Artists_search">Search artists</string>
+    <string name="libContainer_Genres_search">Search genres</string>
+    <string name="libContainer_Playlists_search">Search playlists</string>
+    <string name="libContainer_Folders_search">Search files</string>
+    <string name="libItemAction_enqueue">Enqueue</string>
+    <string name="libItemAction_enqueueNext">Enqueue next</string>
+    <string name="libItemAction_enqueueAll">Enqueue all</string>
+    <string name="libItemAction_playQueue">Play</string>
+    <string name="libItemAction_removeQueueItem">Remove</string>
+    <string name="libItemAction_play">Play</string>
+    <string name="libItemAction_playAll">Play all</string>
+    <string name="libItemAction_playAllMulti">Play all</string>
+    <string name="libItemAction_tipReorder">How to reorder?</string>
+    <string name="libItemAction_remove">Remove</string>
+    <string name="libItemAction_removeFolder">Remove Folder</string>
+    <string name="libItemAction_deletePlaylist">Delete playlist</string>
+    <string name="libItemAction_removeStandalonePlaylist">Remove playlist</string>
+    <string name="libItemAction_addToPlaylist">Add to playlist</string>
+    <string name="libItemAction_details">View details</string>
+    <string name="libItemAction_rename">Rename</string>
+    <string name="libItemAction_sendTo">Add to Playlist</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_create">Create</string>
+    <string name="dialog_add">Add</string>
+    <string name="dialog_rename">Rename</string>
+    <string name="dialog_choose">Choose</string>
+    <string name="dialog_pick">Pick</string>
+    <string name="dialog_back">Back</string>
+    <string name="dialog_navigate_back">Navigate back</string>
+    <string name="dialog_set_timer">Set timer</string>
+    <string name="dialog_cancel_timer">Cancel timer</string>
+    <string name="dialog_timer_off">Timer is off</string>
+    <string name="dialog_timer_on">Timer is on</string>
+    <string name="dialog_timer_remaining">Remaining </string>
+    <string name="dialog_close">Close</string>
+    <string name="dialog_hideTip">OK, hide tip</string>
+    <string name="dialog_empty_placeholder">&lt;Empty&gt;</string>
+    <string name="dialog_dir_empty_placeholder">&lt;No subdirectories&gt;</string>
+    <string name="dialog_add_folder_title">Add Folder</string>
+    <string name="dialog_add_folder_default_value">/storage/sdcard0/</string>
+    <string name="dialog_add_link_title">Add by URL</string>
+    <string name="dialog_add_link_default_value">http://</string>
+    <string name="dialog_add_link_under_text">e.g.\n
+        content://media/external/audio/media/100\n
+        http://108.61.73.115:8032\n
+        file:///storage/sdcard0/Music/file.mp3\n</string>
+     <string name="dialog_add_link_under_text2">
+    Note: There is a difference what media Native and Exo player can open,
+    just try to switch between them -
+        any time from the three dot menu at bottom of screen.</string>
+    <string name="dialog_sort_title">Sort by</string>
+    <string name="dialog_add_link_sample_0">content://media/external/audio/media/</string>
+    <string name="dialog_add_link_sample_1">http://</string>
+    <string name="dialog_add_link_sample_2">file:///storage/sdcard0/</string>
+    <string name="dialog_add_link_sample_3">content://media/internal/audio/media/</string>
+    <string name="dialog_add_playlist_title">Create Playlist</string>
+    <string name="dialog_add_playlist_default_value" />
+    <string name="dialog_rename_playlist_title">Rename Playlist</string>
+    <string name="dialog_scan_playlists">Scanning for playlists…</string>
+    <string name="dialog_playlist_scan_completed">Playlist scan completed</string>
+    <string name="dialog_playlist_append_overwrite_option">Overwrite instead of append</string>
+    <string name="dialog_playlist_save_relative_paths_option">Use relative paths when saving</string>
+    <string name="dialog_playlist_wont_save_streams">Streams will not be saved on platform playlists!</string>
+    <string name="dialog_send_to_playlist_title">Playlists</string>
+    <string name="dialog_send_to_playlist_create_new">&lt;Create new playlist&gt;</string>
+    <string name="dialog_send_to_playlist_add_to_new">New playlist</string>
+
+    <string name="section_playlist_system">Platform Playlists</string>
+    <string name="section_playlist_standalone">Playlist files</string>
+    <string name="playlist_system_name">Platform Playlist</string>
+
+    <string name="dialog_song_details_title">Details</string>
+    <string name="dialog_song_details_tab0">Stream info</string>
+    <string name="dialog_song_details_tab1">Info</string>
+    <string name="dialog_song_details_tab2">Artwork</string>
+    <string name="dialog_sleep_timer_title">Sleep timer</string>
+    <string name="dialog_tip">Tip</string>
+    <string-array name="dialog_folders_menu">
+        <item>Delete</item>
+        <item>Info</item>
+    </string-array>
+    <string name="dialog_volume">Volume</string>
+    <string name="dialog_virtualizer">Virtualizer</string>
+    <string name="dialog_crossfade">Crossfade</string>
+
+    <plurals name="x_items_shuffled">
+        <item quantity="one">1 item shuffled</item>
+        <item quantity="other">%d items shuffled</item>
+    </plurals>
+
+    <string name="playlist_empty_placeholder">&lt;There are no playlists&gt;</string>
+    <string name="playlist_deleted">Playlist deleted</string>
+
+    <plurals name="x_items_added_to_playlist">
+        <item quantity="one">1 item added to playlist</item>
+        <item quantity="other">%d items added to playlist</item>
+    </plurals>
+
+    <plurals name="x_items_saved_in_playlist">
+        <item quantity="one">1 item saved in playlist</item>
+        <item quantity="other">%d items saved in playlist</item>
+    </plurals>
+
+    <plurals name="x_items_about_to_added">
+        <item quantity="one">1 item is about to be added</item>
+        <item quantity="other">%d items are about to be added</item>
+    </plurals>
+
+    <plurals name="x_items_opened_in_queue">
+        <item quantity="one">1 item opened in queue</item>
+        <item quantity="other">%d items opened in queue</item>
+    </plurals>
+
+    <plurals name="x_items_added_to_queue">
+        <item quantity="one">1 item added to queue</item>
+        <item quantity="other">%d items added to queue</item>
+    </plurals>
+
+    <plurals name="x_items_removed_from_queue">
+        <item quantity="one">1 item removed from queue</item>
+        <item quantity="other">%d items removed from queue</item>
+    </plurals>
+
+    <plurals name="x_items_found_playlist_scan">
+        <item quantity="one">1 new playlist found</item>
+        <item quantity="other">%d new playlists found</item>
+    </plurals>
+
+    <string name="reset_visualize">&lt;Reset&gt;</string>
+    <string name="switched_to_video">Switched to video</string>
+    <string name="switched_to_visualizer">Switched to visualizer</string>
+    <string name="video_scaling_fit">Video scaling: Fit</string>
+    <string name="video_scaling_crop">Video scaling: Crop</string>
+    <string name="video_scaling_stretch">Video scaling: Stretch</string>
+
+    <string name="theme">Theme</string>
+    <!---->
+
+    <string name="pref_appTheme">Color Theme</string>
+    <string-array name="pref_appTheme_entries">
+        <item>Blue-White</item>
+        <item>Purple-Pink</item>
+        <item>Green-Sick</item>
+        <item>Orange-Black</item>
+        <item>Gray-Contrast</item>
+    </string-array>
+    <string-array name="pref_appTheme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="pref_appTheme_default">0</string>
+
+    <string name="pref_hold_exit">Hold BACK button to exit app</string>
+    <string-array name="pref_hold_exit_entries">
+        <item>0.2 seconds</item>
+        <item>0.4 seconds</item>
+        <item>0.6 seconds</item>
+        <item>0.8 seconds</item>
+        <item>1.0 second</item>
+        <item>disabled</item>
+    </string-array>
+    <string-array name="pref_holdexit_values">
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>0</item>
+    </string-array>
+    <string name="pref_holdexit_default">600</string>
+
+    <string name="pref_libswipeback">Swipe library navigate</string>
+    <string name="pref_libswipeback2">Swipe right to navigate back in library</string>
+
+    <string name="pref_toolButtonsShowTexts">Tool button texts</string>
+    <string name="pref_toolButtonsShowTexts2">Show text under tool buttons</string>
+
+    <string name="pref_visControlsTimeout">Video/Visualizer auto maximize</string>
+    <string name="pref_visControlsTimeout2">Auto maximize after period of time</string>
+
+    <string name="pref_fadePlayPause">Fade audio</string>
+    <string name="pref_fadePlayPause2">Fade audio when pause/resume</string>
+
+    <string name="pref_resumePlayingAfterAudioFocusGained">Resume when call ends</string>
+    <string name="pref_resumePlayingAfterAudioFocusGained2">Resume playing when audio focus regained</string>
+
+    <string name="pref_playbackEngine">Playback engine</string>
+    <string-array name="pref_playbackEngine_entries">
+        <item>@string/musicSys_native</item>
+        <item>@string/musicSys_exo</item>
+    </string-array>
+    <string-array name="pref_playbackEngine_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="pref_playbackEngine_default">1</string>
+
+    <string name="pref_highQualityBlur_txt1">High quality blur</string>
+    <string name="pref_highQualityBlur_txt2">May greatly reduce visualizer frame rate</string>
+
+    <string name="pref_visualizerGlobalSession_txt1">Visualize global audio session</string>
+    <string name="pref_visualizerGlobalSession_txt2">Prevents audio distortion on some devices</string>
+
+    <string name="pref_playlistDefaultPath_txt1">Default path for playlist files</string>
+    <string name="pref_playlistDefaultPath_txt2">/storage/sdcard0/Playlists/</string>
+
+    <string name="pref_resetTips_txt1">Reset Tips</string>
+    <string name="pref_resetTips_txt2">Show all tips again</string>
+
+    <string name="pref_reset_dialog_title">Reset to default?</string>
+    <string name="pref_reset_dialog_message">This will reset all saved settings</string>
+
+    <string name="pref_openSourceLicenses">Third party licenses</string>
+    <string name="pref_openSourceLicenses2" />
+
+    <string name="pref_emailDeveloper_txt1">Send general feedback</string>
+    <string name="pref_emailDeveloper_txt2">support@email.com</string>
+    <!---->
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textSize="@dimen/textSizeM2"
+        android:padding="8dp"
+        android:textColor="@color/white_alpha_2"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/value"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/audio_virtualizer"-->
+        <!--android:textSize="@dimen/textSizeM3"-->
+        <!--android:padding="8dp"/>-->
+
+
+
+    <it.moondroid.colormixer.HueSeekBar
+        android:id="@+id/hueBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@id/title"/>
+
+    <it.moondroid.colormixer.SaturationSeekBar
+        android:id="@+id/saturationBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@id/hueBar"/>
+
+    <it.moondroid.colormixer.LightnessSeekBar
+        android:id="@+id/lightnessBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@id/hueBar"
+        android:layout_below="@id/title"/>
+
+    <it.moondroid.colormixer.MyOpacitySeekBar
+        android:id="@+id/opacityBar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@id/saturationBar"
+        android:layout_below="@id/hueBar"/>
+
+
+</RelativeLayout>

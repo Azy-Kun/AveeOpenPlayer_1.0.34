@@ -1,0 +1,76 @@
+<html>
+<body>
+The Winamp M3U / M4U playlist format, together with the Real Audio Metadata file format.
+<h3>M3U</h3>
+Developed by Nullsoft.
+<br>
+From <a href="http://gonze.com/playlists/playlist-format-survey.html#M3U">http://gonze.com/playlists/playlist-format-survey.html#M3U</a>:
+<br>
+<i>
+Every line in an M3U file is either a comment, a blank, or a resource to render.
+A comment line begins with the pound sign, #.
+Blanks are ignored.
+A resource is the address of a media file.
+<br>
+A resource address can be anything the M3U reader is capable of understanding.
+These include absolute filesystem paths, relative filesystem paths (with the base undefined by the file format), and URLs.
+<br>
+A resource can be anything the M3U reader is capable of rendering.
+To my knowledge these are always audio files, but there is no set reason for that to be true.
+However, it may not be wise to point to proprietary media formats like Real streaming audio in an M3U file,
+since many players will throw a user-visible error for media they cannot render.
+<br>
+The design philosophy of M3U is to let resource data types do the work.
+Players that don't understand an address or resource type usually skip the entry.
+The ability to reference URLs, in addition to filesystem paths, was added this way;
+some players (Winamp and XMMS, notably) simply added the ability to handle URLs to their M3U readers.
+<br>
+Support for M3U features varies wildly.
+iTunes, for example, will only render the first entry in an M3U file.
+<br>
+M3U is by far the most popular playlist format, probably due to its simplicity.
+It is an ad-hoc standard with no formal definition, no canonical source, and no owner.
+<br>
+Before ID3 tags were widely supported by MP3 players, a flavor of M3U called Extended M3U was used to indicate audio metadata.
+Extended M3U is now obsolete.
+<br>
+The first line, "#EXTM3U" is the format descriptor, in this case M3U (or Extended M3U as it can be called).
+It does not change, it's always this.
+<br>
+The second and third operate in a pair.
+The second begins "#EXTINF:" which serves as the record marker.
+The "#EXTINF" is unchanging.
+After the colon is a number: this number is the length of the track in whole seconds (not minutes:seconds or anything else).
+Then comes a comma and the name of the tune (not the FILE NAME).
+A good list generator will suck this data from the ID3 tag if there is one, and if not it will take the file name with the extension chopped off.
+<br>
+The second line of this pair (the third line) is the actual file name of the media in question.
+</i>
+<h3>RAM</h3>
+From <a href="http://gonze.com/playlists/playlist-format-survey.html#RAM">http://gonze.com/playlists/playlist-format-survey.html#RAM</a>:
+<br>
+<i>
+A RAM file is a flat file containing a list of media URLs, with one URL per line.
+It is almost identical to an M3U playlist, except that it may contain URLs of proprietary RealAudio media types,
+and URLs can be tweaked to affect the Real player startup mode.
+<br>
+Notice that this difference between M3U and RAM is similar to the way that Microsoft playlist formats like ASX, WMV and WAX
+have the same syntax but are constrained to point towards different kinds of remote resources.
+<br>
+Startup mode of the Real client can be specified by adding a query string after the resource.
+RAM embeds parameters for the local player in URLs of remote resources; this practice can be described as bizarre.
+<br>
+RAM is a loosely defined proprietary format whose purpose can be summed up as launching one of the various Real clients and having it figure out what to do.
+<br>
+Metadata in RAM files is appended to URIs.
+<br>
+If the URI in the RAM file points to a RealMedia file (i.e. not an MP3, etc.)
+you can overwrite the title, author, copyright and abstract information in the RealPlayer by adding parameters with these four names (all in lower case)
+at the end of the line, separated by a ? for the first parameter, and &amp;'s for the rest.
+<br>
+It's not necessary to use all these parameters.
+Simply adding ?abstract=Info after the filename leaves title, author and copyright unchanged,
+and only adds "Abstract: Info" in the player's Clip information window.
+</i>
+</body>
+</html>

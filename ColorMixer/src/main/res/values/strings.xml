@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ColorMixer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="seekbar_hue" translatable="false">H</string>
+    <string name="seekbar_saturation" translatable="false">S</string>
+    <string name="seekbar_lightness" translatable="false">L</string>
+    <string name="dialog_hsl_title">Set Color</string>
+    <string name="dialog_hsl_btn_positive">Ok</string>
+    <string name="dialog_hsl_btn_negative">Cancel</string>
+    <string name="dialog_color_title">Color</string>
+    <string name="dialog_color_btn_positive">Copy</string>
+    <string name="dialog_color_btn_negative">Cancel</string>
+    <string name="toast_color_copied">Color copied to clipboard</string>
+
+</resources>

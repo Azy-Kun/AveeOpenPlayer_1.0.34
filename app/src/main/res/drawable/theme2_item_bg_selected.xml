@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <!-- selected -->
+    <item android:state_enabled="true" android:state_selected="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/theme2_app_color"/>
+            <item android:drawable="@color/white_alpha_2"/>
+        </layer-list>
+    </item>
+
+    <!-- pressed -->
+    <item android:state_focused="true"                                android:state_pressed="true" >
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/theme2_app_color"/>
+            <item android:drawable="@color/white_alpha_2"/>
+        </layer-list>
+    </item>
+
+    <item android:state_focused="false"                               android:state_pressed="true" >
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/theme2_app_color"/>
+            <item android:drawable="@color/white_alpha_2"/>
+        </layer-list>
+    </item>
+
+    <!-- focused -->
+    <item android:state_focused="true"                                                            >
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/theme2_app_color"/>
+            <item android:drawable="@color/white_alpha_3"/>
+        </layer-list>
+    </item>
+
+    <!-- default -->
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/theme2_app_color"/>
+            <item android:drawable="@color/white_alpha_3"/>
+        </layer-list>
+    </item>
+
+</selector>

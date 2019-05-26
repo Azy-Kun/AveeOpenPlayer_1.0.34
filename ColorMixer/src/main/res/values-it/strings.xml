@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ColorMixer</string>
+    <string name="action_settings">Impostazioni</string>
+
+    <string name="dialog_hsl_title">Imposta Colore</string>
+    <string name="dialog_hsl_btn_positive">Ok</string>
+    <string name="dialog_hsl_btn_negative">Annulla</string>
+    <string name="dialog_color_title">Colore</string>
+    <string name="dialog_color_btn_negative">Annulla</string>
+    <string name="dialog_color_btn_positive">Copia</string>
+    <string name="toast_color_copied">Colore copiato negli appunti</string>
+
+</resources>

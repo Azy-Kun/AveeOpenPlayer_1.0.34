@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+//
+//    compileSdkVersion 22
+//    buildToolsVersion "22.0.1"
+
+//    defaultConfig {
+//        applicationId "it.moondroid.colormixer"
+//        minSdkVersion 11
+//        targetSdkVersion 22
+//        versionCode 1
+//        versionName "1.0"
+//    }
+//    buildTypes {
+//        release {
+//            runProguard false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+}
