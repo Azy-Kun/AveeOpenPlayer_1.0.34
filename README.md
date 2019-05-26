@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img width="100" height="100" src="app/src/main/res/drawable-xxxhdpi/ic_launcher.png">
+</p>
+
 # Avee Open Player (Avee 1.0.34)
 
 Avee Music Player Version (1.0.34) source release.
